@@ -1,0 +1,75 @@
+Q1. Write a python program to reverse a number using a while loop.
+ Ans.
+def reverse_number():
+    num = int(input("Enter a number: "))
+    reversed_num = 0
+    
+while num > 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num = num // 10
+print("Reversed number:", reversed_num)
+reverse_number()
+
+OUTPUT
+Enter a number: 12345
+Reversed number: 54321
+
+Q2. Write a python program to check whether a number is palindrome or not? 
+Ans.
+# Check if a number is a palindrome
+def check_palindrome():
+    num = int(input("Enter a number: "))
+    original_num = num
+    reversed_num = 0
+
+    while num > 0:
+        digit = num % 10
+        reversed_num = reversed_num * 10 + digit
+        num = num // 10
+
+    if original_num == reversed_num:
+        print(f"{original_num} is a palindrome.")
+    else:
+        print(f"{original_num} is not a palindrome.")
+check_palindrome()
+
+OUTPUT
+ Enter a number: 121
+121 is a palindrome.
+
+Q3. Write a python program finding the factorial of a given number using a while loop.
+Ans.
+# Find the factorial of a number using while loop
+def factorial():
+    num = int(input("Enter a number: "))
+    result = 1
+while num > 1:
+        result *= num
+        num -= 1
+print("Factorial:", result)
+factorial()
+
+OUTPUT
+Enter a number: 5
+Factorial: 120
+
+Q4. Accept numbers using input() function until the user enters 0. If user input 0 then break the while loop and display the sum of all the numbers.
+Ans.
+# Accept numbers until the user enters 0 and display the sum
+def sum_numbers():
+    total_sum = 0
+    while True:
+        num = int(input("Enter a number (0 to stop): "))
+        if num == 0:
+            break
+        total_sum += num
+print("Sum of all numbers entered:", total_sum)
+sum_numbers()
+
+OUTPUT
+Enter a number (0 to stop): 10
+Enter a number (0 to stop): 20
+Enter a number (0 to stop): 30
+Enter a number (0 to stop): 0
+Sum of all numbers entered: 60
