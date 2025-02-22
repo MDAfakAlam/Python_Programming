@@ -1,0 +1,121 @@
+Q1.  Write a program for arithmatic operators?
+Ans:- 
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Perform arithmetic operations
+addition = num1 + num2
+subtraction = num1 - num2
+multiplication = num1 * num2
+division = num1 / num2  # Standard division
+floor_division = num1 // num2  # Division without decimals
+modulus = num1 % num2  # Remainder
+exponentiation = num1 ** num2  # Power calculation
+
+# Display the results
+print("\nResults of Arithmetic Operations:")
+print(f"Addition: {num1} + {num2} = {addition}")
+print(f"Subtraction: {num1} - {num2} = {subtraction}")
+print(f"Multiplication: {num1} * {num2} = {multiplication}")
+print(f"Division: {num1} / {num2} = {division}")
+print(f"Floor Division: {num1} // {num2} = {floor_division}")
+print(f"Modulus: {num1} % {num2} = {modulus}")
+print(f"Exponentiation: {num1} ** {num2} = {exponentiation}")
+
+#OUTPUT
+Enter the first number: 54
+Enter the second number: 8
+
+Results of Arithmetic Operations:
+Addition: 54.0 + 8.0 = 62.0
+Subtraction: 54.0 - 8.0 = 46.0
+Multiplication: 54.0 * 8.0 = 432.0
+Division: 54.0 / 8.0 = 6.75
+Floor Division: 54.0 // 8.0 = 6.0
+Modulus: 54.0 % 8.0 = 6.0
+Exponentiation: 54.0 ** 8.0 = 72301961339136.0
+
+Q2.  Write a program for assignment operators
+Ans:-
+num = int(input("Enter an initial number: "))
+print(f"Initial value: {num}")
+
+# Assignment operations
+num += 5  
+print(f"After 'num += 5': {num}")
+num -= 3  
+print(f"After 'num -= 3': {num}")
+num *= 2
+print(f"After 'num *= 2': {num}")
+num /= 4  
+print(f"After 'num /= 4': {num}")
+num //= 2  
+print(f"After 'num //= 2': {num}")
+num %= 3  
+print(f"After 'num %= 3': {num}")
+
+num **= 2  
+print(f"After 'num **= 2': {num}")
+
+#OUTPUT
+Enter an initial number: 56
+Initial value: 56
+After 'num += 5': 61
+After 'num -= 3': 58
+After 'num *= 2': 116
+After 'num /= 4': 29.0
+After 'num //= 2': 14.0
+After 'num %= 3': 2.0
+After 'num **= 2': 4.0
+
+Q3. Write a program for Bitwise operators 
+Ans:-
+a = int(input(“enter a number”)
+b = int(input(“enter second number”)
+print("Bitwise Operations on a = 4 and b = 2:")
+# Bitwise AND
+result_and = a & b
+print(f"a & b = {result_and}")
+# Bitwise OR
+result_or = a | b
+print(f"a | b = {result_or}")  
+
+# B
+itwise XOR
+result_xor = a ^ b
+print(f"a ^ b = {result_xor}")  
+# Bitwise NOT
+result_not_a = ~a
+print(f"~a = {result_not_a}")  
+# Left Shift
+result_left_shift = a << 1
+print(f"a << 1 = {result_left_shift}")  
+# Right Shift
+result_right_shift = a >> 1
+print(f"a >> 1 = {result_right_shift}") 
+OUTPUT
+Bitwise Operations on a = 4 and b = 2:
+a & b = 0
+a | b = 6
+a ^ b = 6
+~a = -5
+a << 1 = 8
+
+Q4. Write a program to calculate greatest of three numbers.
+Ans:-
+a = int(input("Enter the first number: "))
+b = int(input("Enter the second number: "))
+c = int(input("Enter the third number: "))
+# Compare and find the greatest number
+if a > b and a > c:
+    print(f"The greatest number is: {a}")
+elif b > c:
+    print(f"The greatest number is: {b}")
+else:
+    print(f"The greatest number is: {c}")
+
+#OUTPUT
+Enter the first number: 5
+Enter the second number: 3
+Enter the third number: 7
+The greatest number is: 7
