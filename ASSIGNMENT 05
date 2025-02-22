@@ -1,0 +1,55 @@
+Q1. Declare a div() function with two parameters. Then call the function and pass two numbers and display their division.
+Ans: 
+ def div(a1, a2):
+    if a2 != 0:   
+        return a1 / 2
+    else:
+        return "Division by zero is not allowed."
+result = div (10, 2)
+# Display result
+print("The result of the division is:", result)
+OUTPUT
+The result of the division is: 5.0
+
+Q2. Declare a square() function with one parameter. Then call the function and pass one number and display the square of that number .
+Ans: 
+def square(number):
+    return number ** 2
+num = 8
+result = square(num)
+# Displaying the result
+print("The square of", num, "is:", result)
+
+OUTPUT
+The square of 8 is: 64
+
+Q3. Using max() and min() functions display the maximum and minimum of 5 random numbers.
+Ans: 
+import random
+# Generate 5 random numbers
+random_numbers = [random.randint(1, 100) for _ in range(5)]
+
+# Find maximum and minimum
+maximum = max(random_numbers)
+minimum = min(random_numbers)
+
+# Display the random numbers, maximum, and minimum
+print("Random numbers:", random_numbers)
+print("Maximum number:", maximum)
+print("Minimum number:", minimum)
+OUTPUT
+Random numbers: [45, 23, 89, 67, 12]
+ Maximum number: 89 
+Minimum number: 12
+
+Q4. Accept a name from the user and display that in lower case using lower() function
+Ans: 
+name = input("Enter your name: ")
+# Convert the name to lowercase
+lowercase_name = name.lower()
+# Display the name in lowercase
+print("Your name in lowercase is:", lowercase_name)
+
+OUTPUT
+Enter your name: MD AFAQUE ALAM
+Your name in lowercase is: Md Afaque Alam
