@@ -1,0 +1,66 @@
+
+Q1.Write a Python program that takes a number as input and prints "Even" if the number is even and "Odd" if it's odd.
+Ans.  
+ number = int (input ("Enter a number: "))
+if number % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+       Output:
+       Enter a number: 4
+        Even
+Q2. Create a Python program that checks whether a person is eligible to vote (18 years or older) based on their age.
+Ans.  
+ age = int (input ("Enter your age: "))
+if age >= 18:
+    print("You are eligible to vote.")
+else:
+ print("You are not eligible to vote.")
+
+OUTPUT
+Enter your age: 23
+You are eligible to vote.
+
+Q3. Write a Python program that determines if a given year is a leap year or not. 
+Ans. 
+year = int (input ("Enter a year: "))
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Leap year")
+else:
+    print("Not a leap year")
+
+Output:
+Enter a year: 2024
+Leap year
+
+Q4. Create a Python program that checks if a user-given number is positive, negative, or zero. 
+Ans.
+number = float (input ("Enter a number: "))
+if number > 0:
+    print("Positive")
+elif number < 0:
+    print("Negative")
+else:
+    print("Zero")
+Output:
+Enter a number: -3
+Negative
+
+Q5. Write a Python program that determines the largest of three numbers entered by the user. 
+Ans.
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+num3 = float(input("Enter the third number: "))
+
+if num1 >= num2 and num1 >= num3:
+    print(f"The largest number is {num1}")
+elif num2 >= num1 and num2 >= num3:
+    print(f"The largest number is {num2}")
+else:
+    print(f"The largest number is {num3}")
+
+Output:
+Enter the first number: 10
+Enter the second number: 20
+Enter the third number: 15
+The largest number is 20
