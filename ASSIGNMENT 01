@@ -1,0 +1,81 @@
+#PYTHON ASSIGNMENT 01
+
+Q1.Print hello world ?
+
+Ans:- print("Hello World")
+        OUTPUT    Hello World
+
+Q2. Describe local variable and global variable code ?
+
+Ans:- In Python, variables can be classified as local or global based on their scope:
+Local Variable
+A local variable is declared inside a function and can only be accessed within that function.
+It exists only during the function's execution.
+
+Global Variable
+A global variable is declared outside any function and can be accessed throughout the program,
+including inside functions (if not shadowed by a local variable of the same name).
+
+# Global Variable
+global_var = "I am global"
+
+def my_function():
+    # Local Variable
+    local_var = "I am local"
+    print(local_var)  # Accessing local variable
+    print(global_var)  # Accessing global variable
+
+# Calling the function
+my_function()
+
+# Accessing the global variable outside the function
+print(global_var)
+
+# Trying to access the local variable outside its scope (this will cause an error)
+# print(local_var)
+
+
+Q3.  Write a code that describe Indentation error ?
+
+Ans:-  CASE(i)
+def say_hello():
+print("Hello, World!")  # This line is not indented properly
+CASE(ii)
+def say_hello()
+ print("Hello, World!")  # Properly indented
+
+
+Q4. write a code that describe local and global variable with same name ?
+Ans:-
+# Global variable
+name = "Global Name"
+
+def demonstrate_scope():
+    # Local variable with the same name as the global variable
+    name = "Local Name"
+    print("Inside the function, name is:", name)  # Accesses the local variable
+
+# Call the function
+demonstrate_scope()
+
+# Outside the function, the global variable is accessed
+print("Outside the function, name is:", name)
+ OUTPUT
+Inside the function, name is: Local Name
+Outside the function, name is: Global Name
+
+
+Q5. Write a code for string, int and float input ?
+Ans:- CODE
+
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+height = float(input("Enter your height: "))
+
+# Output the inputs
+print(f"Name: {name}, Age: {age}, Height: {height}")
+
+OUTPUT
+Enter your name: Lucky
+Enter your age: 21
+Enter your height: 5.6
