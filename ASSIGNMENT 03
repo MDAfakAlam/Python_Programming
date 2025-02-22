@@ -1,0 +1,49 @@
+Q1. Using input() function take one number from the user and using ternary operators check whether the number is even or odd ?
+Ans:-
+number = int(input("Enter a number: "))
+result = "Even" if number % 2 == 0 else "Odd"
+print(f"The number {number} is {result}.")
+
+OUTPUT
+Enter a number: 784
+The number 784 is Even.
+
+QS2.  Using input function take two number and then swap the number
+Ans:-
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+ print(f"Before swapping: num1 = {num1}, num2 = {num2}")
+ num1, num2 = num2, num1
+# Print the numbers after swapping
+print(f"After swapping: num1 = {num1}, num2 = {num2}")
+
+OUTPUT
+Enter the first number: 564
+Enter the second number: 654
+Before swapping: num1 = 564, num2 = 654
+After swapping: num1 = 654, num2 = 564
+Q3. Write a Program to Convert Kilometers to Miles
+
+Ans:-
+kilometers = float(input("Enter distance in kilometers: "))
+conversion_factor = 0.621371
+miles = kilometers * conversion_factor
+print(f"{kilometers} kilometers is equal to {miles:.2f} miles.")
+
+OUTPUT
+Enter distance in kilometers: 800
+800.0 kilometers is equal to 497.10 miles.cond number: 654
+
+Q4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year.
+Ans:-
+principal = int(input("enter principles"))
+rate = int(input("enter rate"))
+time =int(input("enter time"))
+# Calculate simple interest
+simple_interest = (principal * rate * time) / 100print(f"The Simple Interest on Rs. {principal} for {time} years at {rate}% per year is Rs. {simple_interest:.2f}.")
+
+OUTPUT
+enter principles2000
+enter rate4
+enter time2
+The Simple Interest on Rs. 2000 for 2 years at 4% per year is Rs. 160.00.
